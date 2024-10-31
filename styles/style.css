@@ -832,7 +832,6 @@ a:active {
     position: sticky;
     top: 5vh;
     padding-right: 2rem;
-    background: var(--linear-gradient-color-2);
   }
 
   /* Main Project Image Area on Large Devices */
