@@ -100,11 +100,11 @@ html {
   --overlay-color: #5200ff;
   --overlay-title-color: #ffffff;
   --overlay-description-color: #ffffff;
-  --hyperlink-color: #5200ff;
+  --hyperlink-color: #1e1e1e;
   --hyperlink-alternate-color: orangered;
   --hover-color: #111;
   --visited-color: #5200ff;
-  --project-title-color: #5200ff;
+  --project-title-color: #1e1e1e;
   --project-sidebar-background-color: transparent;
   --project-sidebar-text-color: black;
   --heart-color: darkred;
