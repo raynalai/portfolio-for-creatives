@@ -335,9 +335,10 @@ a:active {
   background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
   padding: 1.5rem 2.5rem 2.5rem 2.5rem;
   position: -webkit-sticky;
+  position: sticky;
+  width: 100%;
   top: 0;
   z-index: 10;
-  width: 100%;
 }
 
 .branding-navigation {
@@ -412,6 +413,7 @@ a:active {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 1rem;
+  margin-top: 5vh;
   /* Magical, media-query-less responsiveness is achieved using the repeat() function and the auto placement keywords. To achieve wrapping, we can use the auto-fit. If you're using auto-fit, the content will stretch to fill the entire row width.  Specify a minimum width for the columns, using the minmax() function. The 1fr is what tells the browser to distribute the space between the columns so that each column equally gets one fraction of that space.  */
 }
 
@@ -555,10 +557,6 @@ a:active {
 .footer-item-4 {
   grid-column: 1 / 2;
   grid-row: 4 / 5;
-}
-
-.awards-list {
-  margin-bottom: 2rem;
 }
 
 /* Project Page 
@@ -798,7 +796,7 @@ a:active {
 
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    grid-gap: 1rem;
+    grid-gap: 3rem;
   }
 
   /* Grayscale filter with full-colour on hover and tap */
@@ -861,7 +859,7 @@ a:active {
   /* Padding around work grid and project page */
   .portfolio,
   .project-wrapper {
-    padding: 0.5rem;
+    padding: 7vh 5vh;
   }
 
   /* Project Page Flex Direction on Large Devices */
@@ -915,5 +913,15 @@ a:active {
 
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+  }
+}
+
+/* XXX-Large devices (larger desktops, 1600px and up) */
+
+@media (min-width: 1600px) {
+  /* TODO: Add styles here for XX-large devices. */
+
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(900px, 1fr));
   }
 }
