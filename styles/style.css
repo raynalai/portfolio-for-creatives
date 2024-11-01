@@ -329,7 +329,9 @@ a:active {
   display: flex;
   flex-direction: column;
 }
-
+.hero-header {
+  background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
+}
 .branding-navigation {
   display: flex;
   flex-direction: row;
