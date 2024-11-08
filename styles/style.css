@@ -360,13 +360,12 @@ a:active {
 }
 
 .hero-headline-wrapper {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
   padding: 2rem 4rem;
-  text-align: center;
+  margin-top: 3rem;
+  align-items: center;
 }
 
 .hero-icon {
@@ -374,17 +373,28 @@ a:active {
 }
 
 .hero-footer {
+  width: 100%;
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  text-align: center;
+  align-items: center;
+  margin-top: auto;
 }
 
-.hero-footer-navigation {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 1rem;
+.hero-footer img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.tagline {
+  grid-column: 9 / 12;
+  text-align: right;
+  justify-self: end;
+  margin-bottom: -0.5rem;
+}
+.wordmark {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: 100%;
 }
 
 /* Work Page Layout
@@ -912,7 +922,7 @@ a:active {
   /* TODO: Add styles here for XX-large devices. */
 
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   }
 }
 
